@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
 }
 .buttons li {
   &:not(:last-child) {

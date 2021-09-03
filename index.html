@@ -21,6 +21,69 @@
     <header class="page-header">
       <div class="container main-nav">
         <nav class="navigation">
+          <button
+            type="button"
+            class="mobile__button js-open-menu is-open"
+            aria-expended="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="mobile__open"
+                href="./images/icomoon/symbol-defs.svg#icon-open_40px"
+              ></use>
+              <use
+                class="mobile__close"
+                href="./images/icomoon/symbol-defs.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__list">
+              <li><a href="" class="">Студия</a></li>
+              <li>
+                <a href="./portfolio.html" class="">Портфолио</a>
+              </li>
+              <li><a href="" class="">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu__list">
+              <li>
+                <a href="info@devstudio.com" class="info">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a href="+380961111111" class="info"> +380961111111 </a>
+              </li>
+            </ul>
+            <ul class="network__list">
+              <li class="network__item">
+                <a class="network__link" href="" rel="noopener,noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="network__item">
+                <a class="network__link" href="" rel="noopener,noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="network__item">
+                <a class="network__link" href="" rel="noopener,noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="network__item">
+                <a class="network__link" href="" rel="noopener,noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
           <ul class="site__navigation">
             <li><a href="" class="link-current menu-link">Студия</a></li>
@@ -29,26 +92,30 @@
             </li>
             <li><a href="" class="link menu-link">Контакты</a></li>
           </ul>
-          <ul class="contacts-nav">
-            <li>
-              <a href="info@devstudio.com" class="info">
-                <svg class="contacts-icon" width="16" height="12">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a href="+380961111111" class="info">
-                <svg class="contacts-icon" width="16" height="12">
-                  <use href="./images/icomoon/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
-          </ul>
+          <div class="contacts">
+            <ul class="contacts-nav">
+              <li>
+                <a href="info@devstudio.com" class="info">
+                  <svg class="contacts-icon" width="16" height="12">
+                    <use
+                      href="./images/icomoon/symbol-defs.svg#icon-envelope"
+                    ></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a href="+380961111111" class="info">
+                  <svg class="contacts-icon" width="16" height="12">
+                    <use
+                      href="./images/icomoon/symbol-defs.svg#icon-phone"
+                    ></use>
+                  </svg>
+                  +380961111111
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -585,6 +652,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

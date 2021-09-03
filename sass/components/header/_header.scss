@@ -1,3 +1,23 @@
+.page-header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    margin: 16px 15px;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+  }
+}
+
 .main-nav .navigation {
   display: flex;
   align-items: center;
@@ -6,14 +26,6 @@
   margin-left: 93px;
 }
 
-.logo {
-  color: #000000;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
 .site__navigation {
   display: flex;
 }
@@ -34,7 +46,15 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
+
 .link,
 .info {
   &:hover {
@@ -60,6 +80,13 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-link::after {
@@ -73,6 +100,10 @@
   margin-bottom: -33px;
   background-color: var(--accent-color);
   border-radius: 2px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .menu-link::after {
   opacity: 0;
@@ -87,9 +118,35 @@
   opacity: 1;
 }
 
+.contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 305px;
+  }
+}
+
 .contacts-nav {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .contacts-nav li + li {
   margin-left: 50px;
@@ -112,6 +169,10 @@
 .contacts-icon {
   fill: currentColor;
   margin-right: 10px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .contacts-icon {
   &:hover,
@@ -136,5 +197,27 @@ ul {
 }
 
 span {
+  color: var(--accent-color);
+}
+
+.network__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.network__item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+.network__link {
+  font-size: 18px;
+  line-height: 1.2;
   color: var(--accent-color);
 }

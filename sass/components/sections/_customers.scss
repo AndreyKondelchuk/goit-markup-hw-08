@@ -1,6 +1,11 @@
 .customers {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .customers__item:not(:last-child) {
   flex-basis: calc((100%-180px) / 6);

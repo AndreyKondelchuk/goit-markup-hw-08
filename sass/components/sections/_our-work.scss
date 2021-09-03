@@ -1,6 +1,10 @@
 .image {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .image-work {
   padding-bottom: 94px;
@@ -11,6 +15,8 @@
 }
 .thumb {
   position: relative;
+
+  
 }
 
 .thumb img {

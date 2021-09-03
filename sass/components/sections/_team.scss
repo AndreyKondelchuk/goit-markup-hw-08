@@ -4,6 +4,10 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 .section-title {
   margin-bottom: 50px;

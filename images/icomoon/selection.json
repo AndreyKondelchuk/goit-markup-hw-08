@@ -884,14 +884,42 @@
         {}
       ],
       "properties": {
-        "order": 127,
+        "order": 135,
         "id": 1,
         "name": "close_40px",
         "prevSize": 32
       },
       "setIdx": 2,
       "setId": 13,
-      "iconIdx": 0
+      "iconIdx": 2
+    },
+    {
+      "icon": {
+        "paths": [
+          "M204.8 375.468v-68.268h614.4v68.268h-614.4zM204.8 546.132h614.4v-68.265h-614.4v68.265zM204.8 716.8h614.4v-68.268h-614.4v68.268z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "menu_40px"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 134,
+        "id": 0,
+        "name": "open_40px",
+        "prevSize": 32
+      },
+      "setIdx": 2,
+      "setId": 13,
+      "iconIdx": 3
     },
     {
       "icon": {
