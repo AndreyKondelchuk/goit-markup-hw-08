@@ -5,6 +5,9 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .image-work {
   padding-bottom: 94px;
@@ -15,8 +18,6 @@
 }
 .thumb {
   position: relative;
-
-  
 }
 
 .thumb img {

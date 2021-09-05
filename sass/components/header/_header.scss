@@ -221,3 +221,57 @@ span {
   line-height: 1.2;
   color: var(--accent-color);
 }
+
+.mobile-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #000000;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contacts a {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-info {
+  font-size: 24px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

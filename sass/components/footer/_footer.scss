@@ -39,11 +39,27 @@
   color: var(--accent-color);
 }
 .footer-items {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__contacts {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 70px;
+  }
 }
 .footer .button {
   display: inline-flex;
@@ -56,6 +72,9 @@
   border: none;
   text-align: center;
   color: var(--background-color);
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer .button::after {
   width: 24px;
@@ -70,9 +89,18 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.footer .form {
-  min-width: 570px;
-  margin-left: 93px;
+// .footer .form {
+//   min-width: 570px;
+//   margin-left: 93px;
+// }
+.form {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 570px;
+    margin-left: 93px;
+  }
 }
 .footer .sign-up {
   display: flex;
@@ -95,6 +123,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   background-color: #2f303a;
+}
+.form__field {
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer .form__field input::placeholder {
